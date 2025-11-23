@@ -230,7 +230,7 @@
                 
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
-                        <form id="contactForm" class="contact-form p-4 rounded shadow-lg bg-dark border border-secondary needs-validation" novalidate method="POST" action="https://formspree.io/f/mwpzjkyq">
+                        <form id="contactForm" class="contact-form p-4 rounded shadow-lg bg-dark border border-secondary needs-validation" novalidate>
                             
                             <div class="alert alert-success d-none" role="alert" id="successMessage">
                                 <i class="bi bi-check-circle-fill me-2"></i> Votre message a été envoyé avec succès !
@@ -243,14 +243,14 @@
                                 <div class="col-md-6 mb-3">
                                     <div class="input-group">
                                         <span class="input-group-text bg-primary border-primary text-white"><i class="bi bi-person-badge"></i></span>
-                                        <input type="text" class="form-control bg-secondary text-white border-secondary" placeholder="Votre Nom Complet" id="name" name="name" required>
+                                        <input type="text" class="form-control bg-secondary text-white border-secondary" placeholder="Votre Nom Complet" required>
                                         <div class="invalid-feedback">Veuillez entrer votre nom!!</div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <div class="input-group">
                                         <span class="input-group-text bg-primary border-primary text-white"><i class="bi bi-at"></i></span>
-                                        <input type="email" class="form-control bg-secondary text-white border-secondary" placeholder="Votre Email" id="email" name="_replyto" required>
+                                        <input type="email" class="form-control bg-secondary text-white border-secondary" placeholder="Votre Email" required>
                                         <div class="invalid-feedback">Veuillez entrer une adresse email valide!!</div>
                                     </div>
                                 </div>
@@ -258,12 +258,12 @@
                             <div class="mb-3">
                                 <div class="input-group">
                                     <span class="input-group-text bg-primary border-primary text-white"><i class="bi bi-chat-left-text"></i></span>
-                                    <input type="text" class="form-control bg-secondary text-white border-secondary" placeholder="Objet du Message" id="subject" name="subject" required>
+                                    <input type="text" class="form-control bg-secondary text-white border-secondary" placeholder="Objet du Message" required>
                                     <div class="invalid-feedback">Veuillez spécifier l'objet!!</div>
                                 </div>
                             </div>
                             <div class="mb-4">
-                                <textarea class="form-control bg-secondary text-white border-secondary" rows="5" placeholder="Votre Message Détaillé..." id="message" name="message" rows="5" required></textarea>
+                                <textarea class="form-control bg-secondary text-white border-secondary" rows="5" placeholder="Votre Message Détaillé..." required></textarea>
                                 <div class="invalid-feedback">Le message ne peut pas être vide!!</div>
                             </div>
                             <div class="text-center">

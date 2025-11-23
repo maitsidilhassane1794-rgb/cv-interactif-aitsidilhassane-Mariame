@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-/*
+
     // Logique du formulaire de contact avec validation
     const form = document.getElementById('contactForm');
     const successMessage = document.getElementById('successMessage');
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
-    */
+    z
     // Assurer que la page d'accueil est chargée au début
     showPage('home');
 });
