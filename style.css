@@ -1,0 +1,243 @@
+ /*Impoprter Google font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap');
+
+/* Définir les variables CSS pour Bootstrap */
+:root {
+    --bs-body-bg: #0e0d0d;
+    --bs-body-color: #fff;
+    --bs-primary: #9f1d85; /* J'ai choisi cette couleur pour être dominante avec le noir */
+    --bs-primary-rgb: 138, 40, 13;
+    --bs-dark: #1a1a1a;
+    --bs-secondary: #212529;
+}
+/*  Règlages de base & Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Cohérence des couleurs */
+.text-primary { color: var(--bs-primary) !important; }
+.bg-primary { background-color: var(--bs-primary) !important; }
+.btn-primary { 
+    background-color: var(--bs-primary) !important; 
+    border-color: var(--bs-primary) !important;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    box-shadow: 0 0 15px rgba(var(--bs-primary-rgb), 0.6) !important;
+}
+.border-primary { border-color: var(--bs-primary) !important; }
+.btn-secondary {
+    background-color: var(--bs-dark) !important;
+    border-color: #444 !important;
+}
+.btn-secondary:hover {
+    background-color: #2b2b2b !important;
+    border-color: #555 !important;
+}
+.btn-outline-primary {
+    color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+}
+.btn-outline-primary:hover {
+    background-color: var(--bs-primary) !important;
+    color: #fff !important;
+}
+
+/* Header/navbars*/
+.header {
+    background-color: rgba(0, 0, 0, 0.9); 
+    border-bottom: 1px solid #333;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.logo {
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--bs-primary);
+    font-weight: 900;
+}
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 300;
+    margin-left: 20px;
+    transition: .3s;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--bs-primary);
+}
+
+/* Toutes les sections sont cachées par défaut */
+section {
+    display: none; 
+    min-height: 100vh;
+    padding: 100px 0;
+}
+
+/* Seule la page active est affichée */
+section.active-page {
+    display: block;
+    min-height: calc(100vh - 75px); 
+    
+}
+
+/* Séctions Générales */
+.heading {
+    color: var(--bs-primary);
+    font-size: 45px;
+    font-weight: 700;
+}
+
+/* Acceuil(home) */
+.home {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+.content h3 { font-size: 32px; font-weight: 700; }
+.content h2 { font-size: 56px; font-weight: 900; margin: 5px 0; }
+.text { color: var(--bs-primary); font-size: 100%; font-weight: 700; }
+.content p { font-size: 1rem; margin-top: 15px; max-width: 600px; }
+
+/* Acceuil */
+.acceuil a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid var(--bs-primary);
+    border-radius: 50%;
+    font-size: 22px;
+    color: var(--bs-primary);
+    text-decoration: none;
+    margin-right: 15px;
+    transition: .5s;
+}
+.acceuil a:hover {
+    background: var(--bs-primary);
+    color: var(--bs-body-bg);
+    box-shadow: 0 0 15px rgba(var(--bs-primary-rgb), 0.7);
+}
+
+/* À propos */
+.profile-card {
+    background-color: var(--bs-dark) !important;
+    border: 2px solid var(--bs-primary) !important;
+}
+/* Image de CV */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 5px solid var(--bs-primary);
+    margin: 0 auto;
+    display: block;
+    background-size: cover;
+    background-image: url('profilecv.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    cursor: pointer; /* Indique que l'élément est interactif */
+    transition: background-image 0.4s ease-in-out, transform 0.2s ease;
+}
+
+/* Style appliqué lorsque vous servolez la souris sur mon image */
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+/* Compétences */
+.card-header.bg-primary {
+    background-color: var(--bs-primary) !important;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.list-group-item.bg-dark {
+    background-color: var(--bs-dark) !important;
+    border-color: #333;
+    padding: 15px 20px;
+}
+.progress {
+    height: 8px;
+    margin-top: 8px;
+    background-color: #444;
+}
+.progress-bar {
+    background-color: var(--bs-primary);
+    transition: width 2s ease-in-out; 
+}
+
+/* CV */
+.nav-pills .nav-link {
+    color: #fff;
+    background-color: var(--bs-dark);
+    border: 1px solid #444;
+    margin: 0 5px;
+    transition: all 0.3s;
+}
+.nav-pills .nav-link.active {
+    background-color: var(--bs-primary);
+    color: #fff;
+}
+
+.timeline-item {
+    background-color: var(--bs-dark);
+    border-left: 4px solid var(--bs-primary);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.timeline-date {
+    display: block;
+    color: #ccc;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.timeline-title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.timeline-description {
+    color: #e0e0e0;
+}
+
+/* Contact */
+.contact-form .form-control {
+    background-color: var(--bs-secondary);
+    border: 1px solid #444;
+    color: #fff;
+    padding: 15px;
+}
+.contact-form .form-control:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 5px rgba(var(--bs-primary-rgb), 0.5);
+}
+.input-group-text {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+    color: #fff;
+}
+/* les messages de validation dans "Contactez-moi" */
+.alert {
+    text-align: left;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--bs-dark);
+    color: #ccc;
+    border-top: 1px solid #333;
+}
