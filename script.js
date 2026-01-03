@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // Logique pour le changement d'image au survol de la souris
 const profileImgElement = document.getElementById('profile-photo');
 const imageRemplacement = 'profilecvv.png';
-const imageInitiale = profileImgElement.src; // Récupère l'image de base
+
 
 if (profileImgElement) {
     // Event 1: quand la souris survole l'image (mouseover)
